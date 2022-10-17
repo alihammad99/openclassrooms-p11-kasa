@@ -13,7 +13,7 @@ const Navbar = () => {
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : "none",
             })}
-            to="/ "
+            to="/"
           >
             Home
           </NavLink>
