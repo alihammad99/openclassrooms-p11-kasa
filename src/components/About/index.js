@@ -8,11 +8,11 @@ const centerStyle =
 const index = () => {
   return (
     <>
-      <div className="container h-56 rounded-3xl mx-auto overflow-hidden relative">
+      <div className="container h-56 rounded-xl lg:rounded-3xl mx-auto overflow-hidden relative">
         <div
           className={`bg-black h-full w-full opacity-30 ${centerStyle}`}
         ></div>
-        <img className="object-cover w-full" src={Photo} alt="hero" />
+        <img className="object-cover w-full h-full" src={Photo} alt="hero" />
       </div>
       <div className="container mx-auto">
         <Slider
