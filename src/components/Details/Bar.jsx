@@ -45,7 +45,7 @@ const Bar = ({ data }) => {
             {tags.map((item, i) => (
               <span
                 key={i}
-                className="py-1 px-3 w-32 lg:w-44 rounded-lg lg:rounded-xl text-white bg-primary text-md"
+                className="py-1 lg:py-2 px-3 w-40 text-center lg:w-44 rounded-lg lg:rounded-xl text-white bg-primary text-sm md:text-md"
               >
                 {item}
               </span>
