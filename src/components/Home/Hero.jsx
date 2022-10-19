@@ -4,7 +4,7 @@ import Main from "./Main";
 import dataFile from "../../data/home.json";
 
 const centerStyle =
-  "translate-x-[-50%] translate-y-[-50%] absolute top-[50%] left-[50%]";
+  "lg:translate-x-[-50%] lg:translate-y-[-50%] absolute lg:top-[50%] lg:left-[50%]";
 
 const Hero = () => {
   const [data, setData] = useState();
@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <>
       <div className="container h-32 lg:h-56 rounded-2xl lg:rounded-3xl mx-auto overflow-hidden relative">
-        <h1 className={`text-2xl lg:text-4xl text-white ${centerStyle} left-10 translate-x-0 text-left md:text-center z-10`}>
+        <h1 className={`text-2xl lg:text-4xl text-white ${centerStyle} top-[50%] translate-y-[-50%] left-5 translate-x-0 text-left md:text-center z-10`}>
           Home anywhere and everywhere
         </h1>
         <div

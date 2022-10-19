@@ -3,14 +3,16 @@ import { Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Hero from "./components/Home/Hero";
 import Details from "./components/Details";
+import NotFound from "./components/404";
 
 const App = () => {
   return (
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/details/:id" element={<Details />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/details/:id" element={<Details />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );

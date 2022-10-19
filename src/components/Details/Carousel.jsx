@@ -32,12 +32,11 @@ const Carousel = ({ photos, alt }) => {
 
 
   if (photos) {
-    console.log(windowSize.innerWidth)
     return (
       <div className="container mx-auto overflow-hidden relative">
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={windowSize.innerWidth > 400 ? 45 : 70}
+          naturalSlideHeight={windowSize.innerWidth > 400 ? 45 : 78}
           totalSlides={length}
           infinite={true}
           interval={4000}
@@ -47,14 +46,14 @@ const Carousel = ({ photos, alt }) => {
             <img
               src={Arrow}
               alt="previous"
-              className="w-10 lg:w-24 drop-shadow translate-y-[-50%] rotate-90 absolute left-0 top-[50%] z-20"
+              className="w-10 lg:w-24 drop-shadow translate-y-[-40%] rotate-90 absolute left-0 top-[50%] z-20"
             />
           </ButtonBack>
           <ButtonNext>
             <img
               src={Arrow}
               alt="next"
-              className="w-10 lg:w-24 drop-shadow translate-y-[-50%] -rotate-90 absolute right-0 top-[50%] z-20"
+              className="w-10 lg:w-24 drop-shadow translate-y-[-40%] -rotate-90 absolute right-0 top-[50%] z-20"
             />
           </ButtonNext>
 
@@ -63,11 +62,11 @@ const Carousel = ({ photos, alt }) => {
               {photos.map((photo, i) => (
                 <Slide key={i} index={i}>
                   <div className="relative">
-                    <p className="text-2xl text-white bg-black bg-opacity-50 px-2 py-1 rounded-xl absolute translate-x-[-50%] left-[50%] bottom-5">
-                      {i}/{length}
+                    <p className="text-lg lg:text-xl text-white bg-black bg-opacity-30 px-2 py-1 rounded-xl absolute translate-x-[-50%] left-[50%] bottom-5">
+                      {i+1}/{length}
                     </p>
                     <img
-                      className="object-cover h-[36rem] w-full"
+                      className="object-cover h-72 lg:h-[36rem] w-full"
                       src={photo}
                       alt={alt}
                     />

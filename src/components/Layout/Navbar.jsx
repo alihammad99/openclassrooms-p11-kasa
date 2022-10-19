@@ -14,6 +14,7 @@ const Navbar = () => {
               textDecoration: isActive ? "underline" : "none",
             })}
             to="/"
+            end
           >
             Home
           </NavLink>
