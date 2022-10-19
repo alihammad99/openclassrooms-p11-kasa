@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <div className="px-3">
+    <div className="px-3 max-w-[1366px] mx-auto">
     <Navbar />
       <App />
     </div>
